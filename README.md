@@ -96,15 +96,22 @@ some useful rails commands
   <%= submit_tag "Submit Post" %>
 <% end %>
 ```
-
 [Back to top](#Index)
 ---
 ### Validate
-```validates :email, uniqueness: true ```
-```validates :title, presence: true```
-```validates :content, length: {minimum: 101}```
+```ruby
+validates :email, uniqueness: true
 ```
-```validates :age, numericality: {greater_than: 0} ```
+
+```ruby
+validates :title, presence: true
+```
+```ruby
+validates :content, length: {minimum: 101}
+```
+```ruby
+validates :age, numericality: {greater_than: 0} 
+```
 ---
 ### Strong Params
 ```private
