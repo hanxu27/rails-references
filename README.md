@@ -26,13 +26,13 @@ some useful rails commands
     t.string  :name, :value, default: "Untitled"
   * end
 ### rails g resource
-  1. rails g resource Book title:string author_id:integer --no-test-framework
-  2. migration: create_table
-  3. model with associations if defined
-  4. routes resources fullset
-  5. controller blank
-  6. empty view folder
-  7. TESTS if done without --no-test-framework
+  #### rails g resource Book title:string author_id:integer --no-test-framework
+  * migration: create_table
+  * model with associations if defined
+  * routes resources fullset
+  * controller blank
+  * empty view folder
+  * TESTS if done without --no-test-framework
 ---
 ### Restful Routes
 * get '/patients/:id', to: 'patients#show', as: 'patient'
