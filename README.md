@@ -8,13 +8,14 @@ some useful rails commands
 4. Validate
 5. Strong Params
 
-# -------------------- rails g -------------------------
-<!---- rails g model ---->
-# rails g model Author name:string genre:string bio:text --no-test-framework
-  * migration
-  * model
-<!---- rails g migration ---->
-# rails g migration add_more_statistics_to_authors copies_sold:integer last_novel_written:string --no-test-framework
+---
+## rails generate
+### rails g model
+* rails g model Author name:string genre:string bio:text --no-test-framework
+  1. migration
+  2. model
+### rails g migration 
+* rails g migration add_more_statistics_to_authors copies_sold:integer last_novel_written:string --no-test-framework
   * add_column :authors, :copies_sold, :integer
   * add_reference :products, :user, foreign_key: true
   * remove_column :authors, :last_novel_written, :string
@@ -24,18 +25,18 @@ some useful rails commands
     t.string  :item_number, index: true
     t.string  :name, :value, default: "Untitled"
   * end
-  <!---- rails g resource ---->
-  # rails g resource Book title:string author_id:integer --no-test-framework
-   * migration: create_table
-   * model with associations if defined
-   * **tests if done without --no-test-framework
-   * controller blank
-   * empty view folder
-   * routes resources fullset
+### rails g resource
+  1. rails g resource Book title:string author_id:integer --no-test-framework
+  2. migration: create_table
+  3. model with associations if defined
+  4. routes resources fullset
+  5. controller blank
+  6. empty view folder
+  7. TESTS if done without --no-test-framework
 
-# -------------------- Restful Routes -------------------------
-get '/patients/:id', to: 'patients#show', as: 'patient'
-resources :pro_players
+## Restful Routes -------------------------
+* get '/patients/:id', to: 'patients#show', as: 'patient'
+* resources :pro_players
 ![alt text](https://i.stack.imgur.com/64uf4.png)
 
 # -------------------- _form -------------------------
@@ -70,7 +71,7 @@ resources :pro_players
 # -------------------- Tag Helpers -------------------------
 
 # delete with link_to
-<%= link_to('Delete Employee', employee_path, method: :delete, data: {confirm: "Are you sure?"}) %>
+<%= link_to('Delete Employee', employee_path(@employee), method: :delete, data: {confirm: "Are you sure?"}) %>
 
 # image with style
 <%= image_tag @employee.img_url, style: 'width:300px;height:auto' %>
