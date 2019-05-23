@@ -3,11 +3,11 @@ some useful rails commands
 
 # Index
 1. [Rails Generate](#Rails-Generate)
-2. Restful Routes
-3. Partial Form
-4. Tag Helpers
-5. Validate
-6. Strong Params
+2. [Restful Routes](#Restful-Routes)
+3. [Partial Form](#_form)
+4. [Tag Helpers](#Tag-Helper)
+5. [Validate](#Validate)
+6. [Strong Params](#Strong-Params)
 ---
 ### Rails Generate
 ### rails g model
