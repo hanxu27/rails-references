@@ -33,8 +33,7 @@ some useful rails commands
   * controller blank
   * empty view folder
   * TESTS if done without --no-test-framework
-
-####[Back to top](#Index)
+[Back to top](#Index)
 ---
 ### Restful Routes
 ```get '/patients/:id', to: 'patients#show', as: 'patient'```
