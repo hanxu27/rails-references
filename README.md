@@ -33,12 +33,15 @@ some useful rails commands
   * controller blank
   * empty view folder
   * TESTS if done without --no-test-framework
+
 [Back to top](#Index)
 ---
 ### Restful Routes
 ```get '/patients/:id', to: 'patients#show', as: 'patient'```
 ```resources :pro_players```
 ![alt text](https://i.stack.imgur.com/64uf4.png)
+
+[Back to top](#Index)
 ---
 ### _form
 ```
@@ -69,6 +72,8 @@ some useful rails commands
 ```
 * create, edit
 ```<%= render("form") %>```
+
+[Back to top](#Index)
 ---
 
 ### Tag Helpers
@@ -91,6 +96,8 @@ some useful rails commands
   <%= submit_tag "Submit Post" %>
 <% end %>
 ```
+
+[Back to top](#Index)
 ---
 ### Validate
 ```validates :email, uniqueness: true ```
@@ -102,4 +109,7 @@ some useful rails commands
 ```private
  def sea_params
    params.require(:sea).permit(:name, :temperature, :bio, :mood, :image_url, :favoriate_color, :scariest_creature, :has_mermaids)
- end```
+ end
+ ```
+[Back to top](#Index)
+
