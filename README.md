@@ -5,7 +5,7 @@ some useful rails commands
 1. [Rails Generate](#Rails-Generate)
 2. [Restful Routes](#Restful-Routes)
 3. [Partial Form](#_form)
-4. [Tag Helpers](#Tag-Helper)
+4. [Tag Helpers](#Tag-Helpers)
 5. [Validate](#Validate)
 6. [Strong Params](#Strong-Params)
 ---
@@ -33,6 +33,7 @@ some useful rails commands
   * controller blank
   * empty view folder
   * TESTS if done without --no-test-framework
+  [Back to top](#Index)
 ---
 ### Restful Routes
 ```get '/patients/:id', to: 'patients#show', as: 'patient'```
