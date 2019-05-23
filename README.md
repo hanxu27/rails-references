@@ -35,6 +35,7 @@ some useful rails commands
   * TESTS if done without --no-test-framework
 
 [Back to top](#Index)
+
 ---
 ### Restful Routes
 ```get '/patients/:id', to: 'patients#show', as: 'patient'```
@@ -42,6 +43,7 @@ some useful rails commands
 ![alt text](https://i.stack.imgur.com/64uf4.png)
 
 [Back to top](#Index)
+
 ---
 ### _form
 ```
@@ -74,6 +76,7 @@ some useful rails commands
 ```<%= render("form") %>```
 
 [Back to top](#Index)
+
 ---
 
 ### Tag Helpers
@@ -97,6 +100,7 @@ some useful rails commands
 <% end %>
 ```
 [Back to top](#Index)
+
 ---
 ### Validate
 ```ruby
