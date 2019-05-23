@@ -26,7 +26,7 @@ some useful rails commands
     t.string  :name, :value, default: "Untitled"
   * end
 ### rails g resource
-  #### rails g resource Book title:string author_id:integer --no-test-framework
+  ``` rails g resource Book title:string author_id:integer --no-test-framework ```
   * migration: create_table
   * model with associations if defined
   * routes resources fullset
