@@ -1,5 +1,4 @@
-# rails-references
-some useful rails commands
+# Rails References
 <- insert life motto here ->
 
 # Index
