@@ -4,9 +4,10 @@ some useful rails commands
 # Index
 1. Rails Generate
 2. Restful Routes
-3. Tag Helpers
-4. Validate
-5. Strong Params
+3. Partial Form
+4. Tag Helpers
+5. Validate
+6. Strong Params
 ---
 ### Rails Generate
 ### rails g model
@@ -32,13 +33,14 @@ some useful rails commands
   5. controller blank
   6. empty view folder
   7. TESTS if done without --no-test-framework
-
-## Restful Routes -------------------------
+---
+### Restful Routes
 * get '/patients/:id', to: 'patients#show', as: 'patient'
 * resources :pro_players
 ![alt text](https://i.stack.imgur.com/64uf4.png)
-
-# -------------------- _form -------------------------
+---
+### _form
+```
 <% if @employee.errors %>
  <ul>
    <% @employee.errors.full_messages.each do |msg| %>
@@ -63,11 +65,14 @@ some useful rails commands
     <%= f.collection_select(:dog_id, Dog.all, :id, :name)%> <br>
     <%= f.submit %>
 <% end %>
-  
-# create, edit  
+```
+* create, edit
+```
 <%= render("form") %>
+```
+---
 
-# -------------------- Tag Helpers -------------------------
+### Tag Helpers
 
 # delete with link_to
 <%= link_to('Delete Employee', employee_path(@employee), method: :delete, data: {confirm: "Are you sure?"}) %>
