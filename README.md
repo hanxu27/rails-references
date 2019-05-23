@@ -101,8 +101,9 @@ some useful rails commands
 ---
 ### Validate
 ```validates :email, uniqueness: true ```
-```validates :title, presence: true ```
-```validates :content, length: {minimum: 101} ```
+```validates :title, presence: true```
+```validates :content, length: {minimum: 101}```
+```
 ```validates :age, numericality: {greater_than: 0} ```
 ---
 ### Strong Params
