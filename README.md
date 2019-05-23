@@ -2,14 +2,14 @@
 some useful rails commands
 
 # Index
-1. Rails Generate
+1. Rails Generate [Rails Generate]
 2. Restful Routes
 3. Partial Form
 4. Tag Helpers
 5. Validate
 6. Strong Params
 ---
-### Rails Generate
+### Rails Generate (#Rails Generate)
 ### rails g model
 ```rails g model Author name:string genre:string bio:text --no-test-framework```
   1. migration
