@@ -1,5 +1,6 @@
 # rails-references
 some useful rails commands
+<- insert life motto here ->
 
 # Index
 1. [Rails Generate](#Rails-Generate)
