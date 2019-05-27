@@ -38,7 +38,8 @@
 
 ---
 ### Restful Routes
-```get '/patients/:id', to: 'patients#show', as: 'patient'```
+```get '/patients/:id', to: 'patients#show', as: 'patient'``` 
+
 ```resources :pro_players```
 ![alt text](https://i.stack.imgur.com/64uf4.png)
 
